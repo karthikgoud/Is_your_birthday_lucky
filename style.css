@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #a5b7f3;
+    width: 50vw;
+    margin: 0 auto;
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+    display:flex; 
+    flex-direction:column;
+    padding: 0;
+    text-align: center;
+}
+
+header h1 {
+    background-color: rgb(10, 65, 97);
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.birth-date, .lucky-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.6rem;
+}
+
+.birth-date label, .lucky-number label {
+    font-size: 1.5rem;
+}
+
+.birth-date input, .lucky-number input {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}   
+
+.check-button {
+    background-color: rgb(10, 65, 97);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    transition: 0.2s ease-in;
+    color: white;
+
+}
+.check-button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.2s ease-out;
+}
+
+#output {
+    font-size: 1.3rem;
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: crimson;
+    border-radius: 0.4rem;
+}
+
+footer {
+    background-color: rgb(10, 65, 97);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top :5rem;
+    margin-bottom: 0;
+    color: white;
+}
+
+.footer-div{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.social-icons {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.privacy {
+    font-size: smaller;
+    margin-top: auto;
+    margin-bottom: 0.3rem;
+}
+
+
+
