@@ -2,6 +2,8 @@ const dateInput = document.querySelector("#date-input");
 const numberInput = document.querySelector("#number-input");
 const checkButton = document.querySelector("#btn-check");
 const outputDiv = document.querySelector("#output");
+const animationLucky = document.querySelector(".lucky");
+const animationUnlucky = document.querySelector(".unlucky");
 
 // click Event handler
 checkButton.addEventListener("click", checkLuckyNumber);
@@ -19,9 +21,15 @@ function checkLuckyNumber() {
   if (luckyValue >= 0) {
     //   checking if sum === lucky number
     if (sum % luckyValue === 0) {
-      outputDiv.innerText = "YOUR BIRTHDAY IS LUCKY";
+      outputDiv.style.display = "block";
+      outputDiv.textContent = "YOUR BIRTHDAY IS LUCKY";
+      animationLucky.style.display = "block";
+      animationUnlucky.style.display = "none";
     } else {
-      outputDiv.innerText = "YOUR BIRTHDAY IS NOT LUCKY";
+      outputDiv.style.display = "block";
+      outputDiv.textContent = "YOUR BIRTHDAY IS NOT LUCKY";
+      animationUnlucky.style.display = "block";
+      animationLucky.style.display = "none";
     }
   } else {
     outputDiv.innerText = "Lucky number should be greater than 0";
