@@ -10,51 +10,53 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <header>
-            <h1 class="heading">
-                Is Your Birthday Lucky ?
-            </h1>
-        </header>
-
-
-        <main class="main-container">
-
-            <div class="birth-date">
-                <label for="date-input">Enter Your Birthday:</label>
-                <input id="date-input" type="date">
-            </div>
-            <div class="lucky-number">
-                <label for="number-input"> Enter Lucky number:</label>
-                <input id="number-input" type="number" placeholder="Enter Number">
-            </div>
-
-            <button id="btn-check" class="check-button">Check</button>
-
-            <!-- <div id="output"></div> -->
-            <textarea class="" id="output" cols="25" rows="2"></textarea>
-        </main>
-
-        <footer class="footer-div">
-            <div class="social-links">
-                <a href="https://twitter.com/karthikgoudrv" target="_blank"><img class="social-icons"
-                        src="./logos/twitter.svg" alt="twitter"></a>
-                <a href="https://www.linkedin.com/in/karthikgoudrv" target="_blank"><img class="social-icons"
-                        src="./logos/linkedin.svg" alt="linkedin"></a>
-                <a href="https://github.com/karthikgoud" target="_blank"><img class="social-icons"
-                        src="./logos/github.svg" alt="github"></a>
-            </div>
-
-            <p class="privacy">Privacy policy : We do not store your data.</p>
-        </footer>
-
-    </div>
-    </div>
+    <header>
+        <h1 class="heading">
+            Is Your Birthday Lucky ?
+        </h1>
+    </header>
 
 
+    <main class=" container ">
+
+        <div class="birth-date">
+            <label for="date-input">Enter Your Birthday:</label>
+            <input id="date-input" type="date">
+        </div>
+        <div class="lucky-number">
+            <label for="number-input"> Enter Lucky number:</label>
+            <input id="number-input" type="number" placeholder="Enter Number">
+        </div>
+
+        <button id="btn-check" class="check-button">Check</button>
+
+        <!-- output -->
+
+        <div id="output" cols="25" rows="2"></div>
 
 
+        <!-- gif -->
+        <iframe src="https://giphy.com/embed/fgaQzCKFA247RpXN0Z" width="200" height="200" frameBorder="0"
+            class="giphy-embed animation lucky" allowFullScreen></iframe>
+
+
+        <iframe src="https://giphy.com/embed/3ov9jLcdty8iBtGDx6" width="280" height="280" frameBorder="0"
+            class="giphy-embed animation unlucky" allowFullScreen></iframe>
+    </main>
+
+    <footer class="footer-div">
+        <div class="social-links">
+            <a href="https://twitter.com/karthikgoudrv" target="_blank"><img class="social-icons"
+                    src="./logos/twitter.svg" alt="twitter"></a>
+            <a href="https://www.linkedin.com/in/karthikgoudrv" target="_blank"><img class="social-icons"
+                    src="./logos/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/karthikgoud" target="_blank"><img class="social-icons" src="./logos/github.svg"
+                    alt="github"></a>
+        </div>
+
+        <p class="privacy">Privacy policy : We do not store your data.</p>
+    </footer>
 
 </body>
 <script src="./index.js"></script>
