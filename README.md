@@ -1,6 +1,9 @@
 # Is_your_birthday_lucky
 Mark 11: Is_your_birthday_lucky project
 
+A vanilla javascript app which tells if your birthday is lucky or not.
+Go on check your luck !!!
+
 Live link:
 https://find-lucky-number.netlify.app/
 
