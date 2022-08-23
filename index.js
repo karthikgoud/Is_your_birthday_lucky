@@ -14,25 +14,33 @@ function checkLuckyNumber() {
   const dateValue = dateInput.value;
   const luckyValue = numberInput.value;
 
-  // calling dateSum function
-  const sum = dateSum(dateValue);
+  if (luckyValue && dateValue) {
+    // calling dateSum function
+    const sum = dateSum(dateValue);
 
-  // Validate lucky number
-  if (luckyValue >= 0) {
-    //   checking if sum === lucky number
-    if (sum % luckyValue === 0) {
-      outputDiv.style.display = "block";
-      outputDiv.textContent = "YOUR BIRTHDAY IS LUCKY";
-      animationLucky.style.display = "block";
-      animationUnlucky.style.display = "none";
+    // Validate lucky number
+    if (luckyValue >= 0) {
+      //   checking if sum === lucky number
+      if (sum % luckyValue === 0) {
+        outputDiv.style.display = "block";
+        outputDiv.textContent = "YOUR BIRTHDAY IS LUCKY";
+        animationLucky.style.display = "block";
+        animationUnlucky.style.display = "none";
+      } else {
+        outputDiv.style.display = "block";
+        outputDiv.textContent = "YOUR BIRTHDAY IS NOT LUCKY";
+        animationUnlucky.style.display = "block";
+        animationLucky.style.display = "none";
+      }
     } else {
       outputDiv.style.display = "block";
-      outputDiv.textContent = "YOUR BIRTHDAY IS NOT LUCKY";
-      animationUnlucky.style.display = "block";
-      animationLucky.style.display = "none";
+      outputDiv.innerText = "Lucky number should be greater than 0";
     }
   } else {
-    outputDiv.innerText = "Lucky number should be greater than 0";
+    outputDiv.style.display = "block";
+    outputDiv.textContent = "Input is invalid. Please enter all inputs";
+    outputDiv.style.color = "red";
+    outputDiv.style.backgroundColor = "yellow";
   }
 }
 
