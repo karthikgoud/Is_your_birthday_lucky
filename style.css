@@ -39,14 +39,17 @@ header h1 {
     gap: 0.5rem   ;
 }
 
-.birth-date label, .lucky-number label {
+label {
+    color: darkblue;
+    font-weight: bold;
     font-size: 1.5rem;
+    margin: 0.5rem 1rem;
 }
 
-.birth-date input, .lucky-number input {
-    font-size: 1rem;
+ input {
     text-align: center;
     padding: 0.5rem 1rem;
+    font-size: 1rem;
     border-radius: 0.5rem;
     border: none;
 }   
@@ -63,8 +66,8 @@ header h1 {
 }
 .check-button:hover {
     cursor: pointer;
+    background-color: #5d72b7;
     transform: scale(1.15);
-    transition: 0.2s ease-out;
 }
 
 #output {
@@ -96,7 +99,11 @@ iframe{
     margin: 0;
 }
 
-footer {
+/* footer {
+   
+} */
+
+.footer-section{
     background-color: rgb(10, 65, 97);
     display: flex;
     justify-content: center;
@@ -104,15 +111,12 @@ footer {
     padding: 1rem;
     gap: 0.5rem;
     color: white;
-}
-
-.footer-div{
     margin-top: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.social-icons {
+.icons {
     width: 1.6rem;
     margin: 0 1rem;
 }
